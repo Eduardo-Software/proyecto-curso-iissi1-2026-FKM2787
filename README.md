@@ -1,11 +1,11 @@
-# Título Proyecto
+# Estudio Música
 
 ## Miembros del grupo LX-XXX-X (sustituir)
 
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Borreguero Rodríguez, Arturo
+1. Rondán Garcíua, Eduardo
+1. Soler Sánchez, Yeray
+1. Alonso Montes de Oca, Eduardo
 
 ## 1. Introducción al problema
 
