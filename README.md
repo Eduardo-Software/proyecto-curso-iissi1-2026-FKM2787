@@ -9,7 +9,12 @@
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+- SoundStudio Sevilla es un sistema para organizar la actividad de un estudio de música. Permite gestionar usuarios, salas, reservas, instrumentos y pagos. En una reserva se indica el periodo de uso, el número de personas, la sala asignada y, si se necesitan, los instrumentos y sus cantidades.
+
+El sistema debe ayudar a coordinar las reservas para evitar que una sala se asigne a dos clientes en horarios que se solapen. También debe comprobar que el número de personas no supera la capacidad de la sala, calcular los importes y gestionar las cancelaciones.
+
+Los usuarios del sistema son los clientes, que realizan reservas, y los gestores, que administran la información del estudio y supervisan su actividad.
+
   <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/0ab3504b-7575-4ac8-bc18-cdf906c6412e" />
 
 
