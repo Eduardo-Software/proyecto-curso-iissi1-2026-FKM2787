@@ -1,6 +1,6 @@
 # SoundStudio Sevilla
 
-## Miembros del grupo L6-DF-2 (sustituir)
+## Miembros del grupo L6-DF-2 
 
 1. Borreguero Rodríguez, Arturo
 1. Rondán García, Eduardo
@@ -143,17 +143,55 @@ Como cliente quiero cancelar mi reserva para comunicar que ya no utilizaré la s
 
 #### 4.1.1. Requisitos de información
 
-##### R.I.01. Título requisito de información
+**R.I.01. Información de usuarios**
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como gestor quiero consultar los datos de los usuarios para identificar quién utiliza el sistema.
 
 **Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
 
+- Usuario guarda email y contraseña.
+- Cliente guarda nombre y teléfono.
+- Gestor guarda nombre y teléfono.
+- Cada usuario es Cliente o Gestor.
+
+**R.I.02. Información de salas**
+
+Como gestor quiero consultar los datos de las salas para asignarlas a las reservas.
+
+**Prueba de aceptación**
+
+- Sala guarda nombre, capacidad y precio por hora.
+
+**R.I.03. Información de reservas**
+
+Como cliente o gestor quiero consultar los datos de una reserva para conocer su periodo, estado y precio.
+
+**Prueba de aceptación**
+
+- Reserva guarda fecha y hora de inicio, fecha y hora de fin y número de personas.
+- El estado utiliza el enum EstadoReserva, con los valores definidos en el mapa: Pendiente, Confirmado, Cancelado y Financiado.
+- Si la reserva se cancela, se guarda la fecha y hora de cancelación.
+- Se muestran el precio estimado y el precio total.
+- La reserva está asociada al Cliente que la realizó.
+
+**R.I.04. Información de instrumentos y líneas de alquiler**
+
+Como gestor quiero consultar los instrumentos y sus cantidades reservadas para conocer qué incluye cada reserva.
+
+**Prueba de aceptación**
+
+- Instrumento guarda nombre, categoría, stock total y valor de fianza.
+- Línea de alquiler guarda la cantidad del instrumento asociada a la reserva.
+
+**R.I.05. Información de pagos**
+
+Como gestor quiero consultar los pagos para conocer el importe abonado y cuándo se realizó.
+
+**Prueba de aceptación**
+
+- Pago guarda el monto y la fecha.
+- El pago está asociado a una reserva.
+- La fianza asociada se calcula a partir de los instrumentos y las cantidades incluidas en la reserva.
 #### 4.1.2. Reglas de negocio
 -
 
