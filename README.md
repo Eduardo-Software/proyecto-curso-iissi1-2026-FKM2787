@@ -88,7 +88,7 @@ Como gestor quiero registrar y modificar la información de salas e instrumentos
 
 - Una sala guarda nombre, capacidad y precio por hora.
 - Un instrumento guarda nombre, categoría, stock total y valor de fianza.
-- Solo un Gestor puede crear o modificar la información de salas e instrumentos. Se aplica R.N.03.
+- Solo un Gestor puede crear o modificar la información de salas e instrumentos. Se aplica **R.N.03.**
 
 **R.F.03. Creación de una reserva**
 
@@ -98,8 +98,8 @@ Como cliente quiero reservar una sala indicando el periodo y el número de perso
 
 - La reserva guarda la fecha y hora de inicio, la fecha y hora de fin y el número de personas.
 - La reserva queda asociada al Cliente que la realiza.
-- El número de personas no supera la capacidad de la sala. Se aplica R.N.02.
-- La sala no tiene otra reserva con un periodo de uso solapado. Se aplica R.N.01.
+- El número de personas no supera la capacidad de la sala. Se aplica **R.N.02.**
+- La sala no tiene otra reserva con un periodo de uso solapado. Se aplica **R.N.01**.
 
 **R.F.04. Inclusión de instrumentos en una reserva**
 
@@ -138,8 +138,8 @@ Como cliente quiero cancelar mi reserva para comunicar que ya no utilizaré la s
 
 - Al cancelar, la reserva pasa al estado Cancelado.
 - Se registra la fecha y hora de cancelación. Se aplica R.N.03.
-- Una reserva cancelada no puede volver a Pendiente ni a Confirmado. Se aplica R.N.04.
-- Si faltan menos de 24 horas para el inicio, la fianza queda retenida y no se devuelve. Se aplica R.N.05.
+- Una reserva cancelada no puede volver a Pendiente ni a Confirmado. Se aplica **R.N.04.**
+- Si faltan menos de 24 horas para el inicio, la fianza queda retenida y no se devuelve. **Se aplica R.N.05.**
 
 #### 4.1.1. Requisitos de información
 
