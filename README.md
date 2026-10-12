@@ -1,6 +1,6 @@
-# Estudio Música
+# SoundStudio Sevilla
 
-## Miembros del grupo L6-XXX-X (sustituir)
+## Miembros del grupo L6-DF-2 (sustituir)
 
 1. Borreguero Rodríguez, Arturo
 1. Rondán Garcíua, Eduardo
@@ -10,6 +10,8 @@
 ## 1. Introducción al problema
 
 - Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+  <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/0ab3504b-7575-4ac8-bc18-cdf906c6412e" />
+
 
 ## 2. Glosario de términos
 
@@ -51,6 +53,7 @@ para [razón]
 - ...
 
 #### 4.1.2. Reglas de negocio
+-
 
 ##### R.N.01. Título regla negocio
 
