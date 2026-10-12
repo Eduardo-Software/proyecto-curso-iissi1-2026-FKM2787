@@ -16,8 +16,9 @@ El sistema debe ayudar a coordinar las reservas para evitar que una sala se asig
 Los usuarios del sistema son los clientes, que realizan reservas, y los gestores, que administran la información del estudio y supervisan su actividad.
 
  
-  <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/0ab3504b-7575-4ac8-bc18-cdf906c6412e" />
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/3b7e9633-c453-4913-9ed1-158f7dc86cc7" />
+<img  width="400">
+<img  <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/3b4f1995-5874-4020-95f8-e32001ef0a44" />
+
 
 
 ## 2. Glosario de términos
