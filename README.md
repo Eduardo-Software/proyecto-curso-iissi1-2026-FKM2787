@@ -36,7 +36,7 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 - Stock total: cantidad total disponible de un tipo de instrumento.
 - Usuario: persona con una cuenta en el sistema; puede ser Cliente o Gestor.
   
-  <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/95ee859f-bb81-43ea-9ecc-c515d64334c9" /> <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/93b0d14a-bf96-498e-8176-6db89fd9a546" />
+  <img width="425" height="275" alt="image" src="https://github.com/user-attachments/assets/95ee859f-bb81-43ea-9ecc-c515d64334c9" /> <img width="425" height="275" alt="image" src="https://github.com/user-attachments/assets/93b0d14a-bf96-498e-8176-6db89fd9a546" />
 
 
 
