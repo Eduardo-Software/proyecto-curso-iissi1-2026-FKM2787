@@ -193,11 +193,25 @@ Como gestor quiero consultar los pagos para conocer el importe abonado y cuándo
 - El pago está asociado a una reserva.
 - La fianza asociada se calcula a partir de los instrumentos y las cantidades incluidas en la reserva.
 #### 4.1.2. Reglas de negocio
--
+**R.N.01. Sin solapamiento de salas**
 
-##### R.N.01. Título regla negocio
+Una misma sala no puede estar asignada a dos reservas cuyos periodos de uso se solapen.
 
-Descripción de la regla de negocio.
+**R.N.02. Límite de capacidad de la sala**
+
+El número de personas de una reserva no puede superar la capacidad de la sala asignada.
+
+**R.N.03. Registro de la fecha de cancelación**
+
+Si una reserva está en estado Cancelado, debe tener registrada su fecha y hora de cancelación. Si no está cancelada, ese dato debe quedar vacío.
+
+**R.N.04. Reserva cancelada no reactivable**
+
+Una reserva cuyo estado sea Cancelado no puede volver a los estados Pendiente ni Confirmado.
+
+**R.N.05. Penalización por cancelación**
+
+Si una reserva se cancela con menos de 24 horas de antelación, la fianza queda retenida y no se devuelve.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
