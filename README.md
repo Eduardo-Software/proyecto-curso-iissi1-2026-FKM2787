@@ -21,7 +21,18 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 
 ## 2. Glosario de términos
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+-Cliente: usuario que realiza reservas de salas y puede incluir instrumentos.
+-Fianza: cantidad calculada según los instrumentos incluidos en una reserva.
+-Gestor: usuario que administra salas, instrumentos y reservas.
+-Instrumento: equipo musical que puede incluirse en una reserva.
+-Línea de alquiler: asociación entre una reserva y un instrumento; guarda la cantidad solicitada.
+-Pago: registro del importe abonado y de la fecha del pago.
+-Precio estimado: importe calculado según la duración de la reserva y el precio por hora de la sala.
+-Precio total: precio estimado más la fianza.
+-Reserva: solicitud de uso de una sala durante un periodo determinado.
+-Sala: espacio del estudio que se asigna a una reserva.
+-Stock total: cantidad total disponible de un tipo de instrumento.
+-Usuario: persona con una cuenta en el sistema; puede ser Cliente o Gestor.
 
 ## 3. Visión general del sistema
 
