@@ -9,7 +9,7 @@
 
 ## 1. Introducción al problema
 
-- SoundStudio Sevilla es un sistema para organizar la actividad de un estudio de música. Permite gestionar usuarios, salas, reservas, instrumentos y pagos. En una reserva se indica el periodo de uso, el número de personas, la sala asignada y, si se necesitan, los instrumentos y sus cantidades.
+SoundStudio Sevilla es un sistema para organizar la actividad de un estudio de música. Permite gestionar usuarios, salas, reservas, instrumentos y pagos. En una reserva se indica el periodo de uso, el número de personas, la sala asignada y, si se necesitan, los instrumentos y sus cantidades.
 
 El sistema debe ayudar a coordinar las reservas para evitar que una sala se asigne a dos clientes en horarios que se solapen. También debe comprobar que el número de personas no supera la capacidad de la sala, calcular los importes y gestionar las cancelaciones.
 
