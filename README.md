@@ -17,6 +17,7 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 
  
   <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/0ab3504b-7575-4ac8-bc18-cdf906c6412e" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/3b7e9633-c453-4913-9ed1-158f7dc86cc7" />
 
 
 ## 2. Glosario de términos
