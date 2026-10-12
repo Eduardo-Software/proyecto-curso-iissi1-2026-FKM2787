@@ -45,7 +45,8 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 
 Como usuario, quiero acceder al sistema con mi cuenta para utilizar las funciones correspondientes a mi tipo de usuario.
 
-**R.G.02. Gestión de salas**  Como gestor, quiero mantener la información de las salas para utilizarlas en las reservas.
+**R.G.02. Gestión de salas**
+Como gestor, quiero mantener la información de las salas para utilizarlas en las reservas.
 
 **R.G.03. Gestión de reservas**. 
 
