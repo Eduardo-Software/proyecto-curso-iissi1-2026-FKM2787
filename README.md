@@ -41,6 +41,8 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 
 
 ## 3. Visión general del sistema
+
+### 3.1. Requisitos generales
 **R.G.01. Gestión de usuarios**. 
 
 Como usuario, quiero acceder al sistema con mi cuenta para utilizar las funciones correspondientes a mi tipo de usuario.
@@ -60,8 +62,6 @@ Como gestor, quiero mantener la información de los instrumentos para conocer su
 **R.G.05. Gestión de pagos y cancelaciones**. 
 
 Como gestor, quiero registrar pagos y cancelaciones para llevar el control económico de las reservas.
-
-### 3.1. Requisitos generales
 
 ### 3.2. Usuarios del sistema
 
