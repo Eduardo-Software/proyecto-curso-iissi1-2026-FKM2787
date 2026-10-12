@@ -1,6 +1,6 @@
 # Estudio Música
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L6-XXX-X (sustituir)
 
 1. Borreguero Rodríguez, Arturo
 1. Rondán Garcíua, Eduardo
