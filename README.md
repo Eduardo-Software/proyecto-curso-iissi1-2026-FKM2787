@@ -71,18 +71,75 @@ Como gestor, quiero registrar pagos y cancelaciones para llevar el control econ�
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
+**R.F.01. Acceso de usuarios**
 
-#### R.F.01. Título requisito funcional
-
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como usuario quiero acceder con mi email y contraseña para utilizar el sistema según mi perfil.
 
 **Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- Se debe aplicar la regla de negocio R.N.XX.
-- ...
+
+- El usuario accede con el email y la contraseña registrados.
+- El usuario es Cliente o Gestor, según su tipo en el sistema.
+
+**R.F.02. Gestión de salas e instrumentos**
+
+Como gestor quiero registrar y modificar la información de salas e instrumentos para mantener actualizado el catálogo del estudio.
+
+**Prueba de aceptación**
+
+- Una sala guarda nombre, capacidad y precio por hora.
+- Un instrumento guarda nombre, categoría, stock total y valor de fianza.
+- Solo un Gestor puede crear o modificar la información de salas e instrumentos. Se aplica R.N.03.
+
+**R.F.03. Creación de una reserva**
+
+Como cliente quiero reservar una sala indicando el periodo y el número de personas para organizar el uso del estudio.
+
+**Prueba de aceptación**
+
+- La reserva guarda la fecha y hora de inicio, la fecha y hora de fin y el número de personas.
+- La reserva queda asociada al Cliente que la realiza.
+- El número de personas no supera la capacidad de la sala. Se aplica R.N.02.
+- La sala no tiene otra reserva con un periodo de uso solapado. Se aplica R.N.01.
+
+**R.F.04. Inclusión de instrumentos en una reserva**
+
+Como cliente quiero indicar los instrumentos y las cantidades que necesito para usarlos durante mi reserva.
+
+**Prueba de aceptación**
+
+- Cada instrumento incluido queda relacionado con la reserva mediante una línea de alquiler.
+- La línea de alquiler guarda la cantidad solicitada.
+
+**R.F.05. Cálculo de los importes**
+
+Como cliente quiero conocer los importes de mi reserva para saber cuánto cuesta.
+
+**Prueba de aceptación**
+
+- La duración se calcula restando la fecha y hora de inicio a la fecha y hora de fin.
+- El precio estimado se calcula multiplicando la duración por el precio por hora de la sala.
+- La fianza se calcula según las cantidades de instrumentos y sus valores de fianza.
+- El precio total se calcula sumando el precio estimado y la fianza.
+
+**R.F.06. Registro del pago**
+
+Como gestor quiero registrar el pago asociado a una reserva para mantener constancia del importe abonado.
+
+**Prueba de aceptación**
+
+- El pago guarda el monto y la fecha.
+- El pago queda asociado a una reserva.
+
+**R.F.07. Cancelación de una reserva**
+
+Como cliente quiero cancelar mi reserva para comunicar que ya no utilizaré la sala.
+
+**Prueba de aceptación**
+
+- Al cancelar, la reserva pasa al estado Cancelado.
+- Se registra la fecha y hora de cancelación. Se aplica R.N.03.
+- Una reserva cancelada no puede volver a Pendiente ni a Confirmado. Se aplica R.N.04.
+- Si faltan menos de 24 horas para el inicio, la fianza queda retenida y no se devuelve. Se aplica R.N.05.
 
 #### 4.1.1. Requisitos de información
 
