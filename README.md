@@ -3,7 +3,7 @@
 ## Miembros del grupo L6-DF-2 (sustituir)
 
 1. Borreguero Rodríguez, Arturo
-1. Rondán Garcíua, Eduardo
+1. Rondán García, Eduardo
 1. Soler Sánchez, Yeray
 1. Alonso Montes de Oca, Gonzalo
 
