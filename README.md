@@ -64,6 +64,9 @@ Como gestor, quiero mantener la información de los instrumentos para conocer su
 Como gestor, quiero registrar pagos y cancelaciones para llevar el control económico de las reservas.
 
 ### 3.2. Usuarios del sistema
+- Cliente: realiza reservas y puede incluir instrumentos en ellas.
+
+- Gestor: administra la información de salas e instrumentos y supervisa las reservas.
 
 ## 4. Catálogo de requisitos
 
