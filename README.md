@@ -24,15 +24,13 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 ## 2. Glosario de términos
 
 - Fianza: cantidad calculada según los instrumentos incluidos en una reserva.
-- Instrumento: equipo musical que puede incluirse en una reserva.
 - Línea de alquiler: asociación entre una reserva y un instrumento; guarda la cantidad solicitada.
-- Pago: registro del importe abonado y de la fecha del pago.
 - Precio estimado: importe calculado según la duración de la reserva y el precio por hora de la sala.
 - Precio total: precio estimado más la fianza.
 - Reserva: solicitud de uso de una sala durante un periodo determinado.
 - Sala: espacio del estudio que se asigna a una reserva.
 - Stock total: cantidad total disponible de un tipo de instrumento.
-- Usuario: persona con una cuenta en el sistema; puede ser Cliente o Gestor.
+
   
   <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/95ee859f-bb81-43ea-9ecc-c515d64334c9" /> <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/93b0d14a-bf96-498e-8176-6db89fd9a546" />
 
