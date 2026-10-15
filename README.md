@@ -61,6 +61,7 @@ quiero realizar y consultar reservas
 para organizar el uso del estudio.
 
 **R.G.04. Gestión de instrumentos**
+
 Como gestor,
 
 quiero gestionar los instrumentos
@@ -68,6 +69,7 @@ quiero gestionar los instrumentos
 para mantener actualizado el catálogo del estudio.
 
 **R.G.05. Gestión de pagos**
+
 Como gestor,
 
 quiero gestionar los pagos
