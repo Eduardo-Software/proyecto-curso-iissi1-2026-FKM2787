@@ -39,46 +39,23 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 ## 3. Visión general del sistema
 
 ### 3.1. Requisitos generales
-**R.G.01. Gestión de usuarios**. 
+R.G.01. Gestión de usuarios
+Como gestor, quiero gestionar las cuentas de usuario para organizar el acceso al sistema.
 
-Como usuario, 
+R.G.02. Gestión de salas
+Como gestor, quiero gestionar las salas para mantener actualizada la información del estudio.
 
-quiero acceder al sistema con mi cuenta 
+R.G.03. Gestión de reservas
+Como cliente, quiero realizar y consultar reservas para organizar el uso del estudio.
 
-para utilizar las funciones correspondientes a mi tipo de usuario.
+R.G.04. Gestión de instrumentos
+Como gestor, quiero gestionar los instrumentos para mantener actualizado el catálogo del estudio.
 
-**R.G.02. Gestión de salas**. 
+R.G.05. Gestión de pagos
+Como gestor, quiero gestionar los pagos para llevar el control de los importes abonados.
 
-Como gestor, 
-
-quiero mantener la información de las salas
-
-para utilizarlas en las reservas.
-
-**R.G.03. Gestión de reservas**. 
-
-Como cliente, 
-
-quiero realizar y consultar reservas 
-
-para organizar el uso del estudio.
-
-**R.G.04. Gestión de instrumentos**. 
-
-Como gestor, 
-
-quiero mantener la información de los instrumentos 
-
-para conocer sus características y su valor de fianza.
-
-**R.G.05. Gestión de pagos y cancelaciones**. 
-
-Como gestor, 
-
-quiero registrar pagos y cancelaciones 
-
-para llevar el control económico de las reservas.
-
+R.G.06. Gestión de cancelaciones
+Como cliente, quiero cancelar mis reservas cuando no pueda asistir y conocer qué ocurre con la fianza.
 ### 3.2. Usuarios del sistema
 - Cliente: realiza reservas y puede incluir instrumentos en ellas.
 
