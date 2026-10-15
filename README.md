@@ -43,23 +43,43 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 ### 3.1. Requisitos generales
 **R.G.01. Gestión de usuarios**. 
 
-Como usuario, quiero acceder al sistema con mi cuenta para utilizar las funciones correspondientes a mi tipo de usuario.
+Como usuario, 
+
+quiero acceder al sistema con mi cuenta 
+
+para utilizar las funciones correspondientes a mi tipo de usuario.
 
 **R.G.02. Gestión de salas**. 
 
-Como gestor, quiero mantener la información de las salas para utilizarlas en las reservas.
+Como gestor, 
+
+quiero mantener la información de las salas
+
+para utilizarlas en las reservas.
 
 **R.G.03. Gestión de reservas**. 
 
-Como cliente, quiero realizar y consultar reservas para organizar el uso del estudio.
+Como cliente, 
+
+quiero realizar y consultar reservas 
+
+para organizar el uso del estudio.
 
 **R.G.04. Gestión de instrumentos**. 
 
-Como gestor, quiero mantener la información de los instrumentos para conocer sus características y su valor de fianza.
+Como gestor, 
+
+quiero mantener la información de los instrumentos 
+
+para conocer sus características y su valor de fianza.
 
 **R.G.05. Gestión de pagos y cancelaciones**. 
 
-Como gestor, quiero registrar pagos y cancelaciones para llevar el control económico de las reservas.
+Como gestor, 
+
+quiero registrar pagos y cancelaciones 
+
+para llevar el control económico de las reservas.
 
 ### 3.2. Usuarios del sistema
 - Cliente: realiza reservas y puede incluir instrumentos en ellas.
@@ -71,7 +91,11 @@ Como gestor, quiero registrar pagos y cancelaciones para llevar el control econ�
 ### 4.1. Requisitos funcionales
 **R.F.01. Acceso de usuarios**
 
-Como usuario quiero acceder con mi email y contraseña para utilizar el sistema según mi perfil.
+Como usuario 
+
+quiero acceder con mi email y contraseña 
+
+para utilizar el sistema según mi perfil.
 
 **Prueba de aceptación**
 
@@ -80,7 +104,11 @@ Como usuario quiero acceder con mi email y contraseña para utilizar el sistema 
 
 **R.F.02. Gestión de salas e instrumentos**
 
-Como gestor quiero registrar y modificar la información de salas e instrumentos para mantener actualizado el catálogo del estudio.
+Como gestor 
+
+quiero registrar y modificar la información de salas e instrumentos 
+
+para mantener actualizado el catálogo del estudio.
 
 **Prueba de aceptación**
 
@@ -90,7 +118,11 @@ Como gestor quiero registrar y modificar la información de salas e instrumentos
 
 **R.F.03. Creación de una reserva**
 
-Como cliente quiero reservar una sala indicando el periodo y el número de personas para organizar el uso del estudio.
+Como cliente 
+
+quiero reservar una sala indicando el periodo y el número de personas 
+
+para organizar el uso del estudio.
 
 **Prueba de aceptación**
 
@@ -101,7 +133,11 @@ Como cliente quiero reservar una sala indicando el periodo y el número de perso
 
 **R.F.04. Inclusión de instrumentos en una reserva**
 
-Como cliente quiero indicar los instrumentos y las cantidades que necesito para usarlos durante mi reserva.
+Como cliente 
+
+quiero indicar los instrumentos y las cantidades que necesito 
+
+para usarlos durante mi reserva.
 
 **Prueba de aceptación**
 
@@ -110,7 +146,11 @@ Como cliente quiero indicar los instrumentos y las cantidades que necesito para 
 
 **R.F.05. Cálculo de los importes**
 
-Como cliente quiero conocer los importes de mi reserva para saber cuánto cuesta.
+Como cliente 
+
+quiero conocer los importes de mi reserva 
+
+para saber cuánto cuesta.
 
 **Prueba de aceptación**
 
@@ -121,7 +161,11 @@ Como cliente quiero conocer los importes de mi reserva para saber cuánto cuesta
 
 **R.F.06. Registro del pago**
 
-Como gestor quiero registrar el pago asociado a una reserva para mantener constancia del importe abonado.
+Como gestor 
+
+quiero registrar el pago asociado a una reserva 
+
+para mantener constancia del importe abonado.
 
 **Prueba de aceptación**
 
@@ -130,7 +174,11 @@ Como gestor quiero registrar el pago asociado a una reserva para mantener consta
 
 **R.F.07. Cancelación de una reserva**
 
-Como cliente quiero cancelar mi reserva para comunicar que ya no utilizaré la sala.
+Como cliente 
+
+quiero cancelar mi reserva 
+
+para comunicar que ya no utilizaré la sala.
 
 **Prueba de aceptación**
 
@@ -143,7 +191,11 @@ Como cliente quiero cancelar mi reserva para comunicar que ya no utilizaré la s
 
 **R.I.01. Información de usuarios**
 
-Como gestor quiero consultar los datos de los usuarios para identificar quién utiliza el sistema.
+Como gestor 
+
+quiero consultar los datos de los usuarios
+
+para identificar quién utiliza el sistema.
 
 **Prueba de aceptación**
 
@@ -154,7 +206,11 @@ Como gestor quiero consultar los datos de los usuarios para identificar quién u
 
 **R.I.02. Información de salas**
 
-Como gestor quiero consultar los datos de las salas para asignarlas a las reservas.
+Como gestor
+
+quiero consultar los datos de las salas 
+
+para asignarlas a las reservas.
 
 **Prueba de aceptación**
 
@@ -162,7 +218,11 @@ Como gestor quiero consultar los datos de las salas para asignarlas a las reserv
 
 **R.I.03. Información de reservas**
 
-Como cliente o gestor quiero consultar los datos de una reserva para conocer su periodo, estado y precio.
+Como cliente o gestor 
+
+quiero consultar los datos de una reserva
+
+para conocer su periodo, estado y precio.
 
 **Prueba de aceptación**
 
@@ -174,7 +234,11 @@ Como cliente o gestor quiero consultar los datos de una reserva para conocer su 
 
 **R.I.04. Información de instrumentos y líneas de alquiler**
 
-Como gestor quiero consultar los instrumentos y sus cantidades reservadas para conocer qué incluye cada reserva.
+Como gestor 
+
+quiero consultar los instrumentos y sus cantidades reservadas 
+
+para conocer qué incluye cada reserva.
 
 **Prueba de aceptación**
 
@@ -183,7 +247,11 @@ Como gestor quiero consultar los instrumentos y sus cantidades reservadas para c
 
 **R.I.05. Información de pagos**
 
-Como gestor quiero consultar los pagos para conocer el importe abonado y cuándo se realizó.
+Como gestor 
+
+quiero consultar los pagos 
+
+para conocer el importe abonado y cuándo se realizó.
 
 **Prueba de aceptación**
 
