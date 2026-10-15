@@ -47,6 +47,7 @@ quiero gestionar las cuentas de usuario
 para organizar el acceso al sistema.
 
 **R.G.02. Gestión de salas**
+
 Como gestor,
 
 quiero gestionar las salas
@@ -54,6 +55,7 @@ quiero gestionar las salas
 para mantener actualizada la información del estudio.
 
 **R.G.03. Gestión de reservas**
+
 Como cliente,
 
 quiero realizar y consultar reservas
@@ -91,31 +93,49 @@ cuando no pueda asistir y conocer qué ocurre con la fianza.
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
-**R.F.01.01. Creación de usuario**  
-Como usuario, quiero crear una cuenta para acceder al sistema.
+**R.F.01.01. Creación de usuario** 
+
+Como usuario,
+
+quiero crear una cuenta
+
+para acceder al sistema.
 
 **Prueba de aceptación**
 
 - La cuenta guarda email y contraseña.
 - El usuario se registra como Cliente o Gestor.
 
-**R.F.01.02. Listado de usuarios**  
-Como gestor, quiero obtener el listado de usuarios para organizar las cuentas del sistema.
+**R.F.01.02. Listado de usuarios** 
+
+Como gestor,
+
+quiero obtener el listado de usuarios
+
+para organizar las cuentas del sistema.
 
 **Prueba de aceptación**
 
 - El listado muestra los usuarios y su tipo: Cliente o Gestor.
 
 **R.F.01.03. Edición de usuario**  
-Como usuario, quiero editar mis datos para mantenerlos actualizados.
+
+Como usuario,
+
+quiero editar mis datos
+
+para mantenerlos actualizados.
 
 **Prueba de aceptación**
 
 - Se pueden modificar los datos disponibles de la cuenta.
 - Los cambios aparecen en el listado.
 
-**R.F.01.04. Borrado de usuario**  
-Como gestor, quiero borrar cuentas que ya no deban estar en el sistema.
+**R.F.01.04. Borrado de usuario** 
+
+Como gestor,
+
+quiero borrar cuentas que ya no deban estar en el sistema.
 
 **Prueba de aceptación**
 
@@ -124,22 +144,37 @@ Como gestor, quiero borrar cuentas que ya no deban estar en el sistema.
 
 #### Requisitos asociados a R.G.02. Gestión de salas
 
-**R.F.02.01. Creación de sala**  
-Como gestor, quiero crear salas para incluirlas en el sistema.
+**R.F.02.01. Creación de sala**
+
+Como gestor,
+
+quiero crear salas
+
+para incluirlas en el sistema.
 
 **Prueba de aceptación**
 
 - La sala guarda nombre, capacidad y precio por hora.
 
 **R.F.02.02. Listado de salas**  
-Como gestor, quiero obtener el listado de salas para organizar las reservas.
+
+Como gestor,
+
+quiero obtener el listado de salas
+
+para organizar las reservas.
 
 **Prueba de aceptación**
 
 - El listado muestra nombre, capacidad y precio por hora de cada sala.
 
 **R.F.02.03. Edición de sala**  
-Como gestor, quiero editar los datos de una sala para mantenerlos actualizados.
+
+Como gestor,
+
+quiero editar los datos de una sala
+
+para mantenerlos actualizados.
 
 **Prueba de aceptación**
 
@@ -147,17 +182,23 @@ Como gestor, quiero editar los datos de una sala para mantenerlos actualizados.
 - Los cambios aparecen en el listado.
 
 **R.F.02.04. Borrado de sala**  
-Como gestor, quiero borrar salas que ya no se utilicen.
+
+Como gestor,
+
+quiero borrar salas que ya no se utilicen.
 
 **Prueba de aceptación**
 
 - Se puede borrar una sala que no esté asociada a reservas.
 - No se puede borrar una sala que tenga reservas asociadas.
 
-#### Requisitos asociados a R.G.03. Gestión de reservas
-
 **R.F.03.01. Creación de reserva**  
-Como cliente, quiero crear una reserva para utilizar una sala durante un periodo determinado.
+
+Como cliente,
+
+quiero crear una reserva
+
+para utilizar una sala durante un periodo determinado.
 
 **Prueba de aceptación**
 
@@ -169,15 +210,25 @@ Como cliente, quiero crear una reserva para utilizar una sala durante un periodo
 - El precio total se calcula como `PrecioEstimado + Fianza`.
 
 **R.F.03.02. Listado de reservas**  
-Como cliente, quiero obtener el listado de mis reservas para organizar el uso del estudio.
+
+Como cliente,
+
+quiero obtener el listado de mis reservas
+
+para organizar el uso del estudio.
 
 **Prueba de aceptación**
 
 - El listado muestra las reservas asociadas al cliente.
 - Cada reserva muestra sala, periodo, número de personas y estado.
 
-**R.F.03.03. Edición de reserva**  
-Como cliente, quiero editar los datos de una reserva para corregirlos o actualizarlos.
+**R.F.03.03. Edición de reserva**
+
+Como cliente,
+
+quiero editar los datos de una reserva
+
+para corregirlos o actualizarlos.
 
 **Prueba de aceptación**
 
@@ -185,31 +236,45 @@ Como cliente, quiero editar los datos de una reserva para corregirlos o actualiz
 - Tras la edición se siguen cumpliendo **R.N.01** y **R.N.02**.
 
 **R.F.03.04. Borrado de reserva**  
-Como cliente, quiero borrar una reserva que ya no necesite.
+
+Como cliente,
+
+quiero borrar una reserva que ya no necesite.
 
 **Prueba de aceptación**
 
 - La reserva borrada deja de aparecer en el listado.
 - También se borran las líneas de alquiler y el pago asociados a esa reserva.
 
-#### Requisitos asociados a R.G.04. Gestión de instrumentos
-
 **R.F.04.01. Creación de instrumento**  
-Como gestor, quiero crear instrumentos para añadirlos al catálogo.
+
+Como gestor,
+
+quiero crear instrumentos
+
+para añadirlos al catálogo.
 
 **Prueba de aceptación**
 
 - El instrumento guarda nombre, categoría, stock total y valor de fianza.
 
 **R.F.04.02. Listado de instrumentos**  
-Como gestor, quiero obtener el listado de instrumentos para organizar el catálogo.
+
+Como gestor,
+
+quiero obtener el listado de instrumentos
+
+para organizar el catálogo.
 
 **Prueba de aceptación**
 
 - El listado muestra nombre, categoría, stock total y valor de fianza.
 
 **R.F.04.03. Edición de instrumento**  
-Como gestor, quiero editar los datos de un instrumento para mantenerlos actualizados.
+
+Como gestor,
+
+quiero editar los datos de un instrumento para mantenerlos actualizados.
 
 **Prueba de aceptación**
 
@@ -217,24 +282,35 @@ Como gestor, quiero editar los datos de un instrumento para mantenerlos actualiz
 - Los cambios aparecen en el listado.
 
 **R.F.04.04. Borrado de instrumento**  
-Como gestor, quiero borrar instrumentos que ya no formen parte del catálogo.
+
+Como gestor,
+
+quiero borrar instrumentos que ya no formen parte del catálogo.
 
 **Prueba de aceptación**
 
 - Se puede borrar un instrumento que no esté asociado a líneas de alquiler.
-- No se puede borrar un instrumento que aparezca en líneas de alquiler.
-
-#### Requisitos asociados a R.G.05. Gestión de pagos
+- No se puede borrar un instrumento que aparezca en líneas de alquiler
 
 **R.F.05.01. Listado de pagos**  
-Como gestor, quiero obtener el listado de pagos para llevar el control de los importes abonados.
+
+Como gestor,
+
+quiero obtener el listado de pagos
+
+para llevar el control de los importes abonados.
 
 **Prueba de aceptación**
 
 - El listado muestra el monto, la fecha y la reserva asociada a cada pago.
 
-**R.F.05.02. Creación/realización de pago**  
-Como gestor, quiero registrar un pago para dejar constancia del abono de una reserva.
+**R.F.05.02.Realización de pago**  
+
+Como gestor,
+
+quiero registrar un pago
+
+para dejar constancia del abono de una reserva.
 
 **Prueba de aceptación**
 
@@ -242,32 +318,48 @@ Como gestor, quiero registrar un pago para dejar constancia del abono de una res
 - El pago queda asociado a una reserva.
 
 **R.F.05.03. Edición de pago**  
-Como gestor, quiero editar un pago para corregir sus datos.
+
+Como gestor,
+
+quiero editar un pago
+
+para corregir sus datos.
 
 **Prueba de aceptación**
 
 - Se pueden modificar el monto y la fecha.
 - Los cambios aparecen en el listado.
 
-**R.F.05.04. Borrado de pago**  
-Como gestor, quiero borrar un pago registrado por error.
+**R.F.05.04. Borrado de pago** 
+
+Como gestor,
+
+quiero borrar un pago registrado por error.
 
 **Prueba de aceptación**
 
 - El pago deja de aparecer en el listado.
 - La reserva asociada se mantiene.
 
-#### Requisitos asociados a R.G.06. Gestión de cancelaciones
-
 **R.F.06.01. Listado de cancelaciones**  
-Como gestor, quiero obtener el listado de reservas canceladas para organizar su seguimiento.
+
+Como gestor,
+
+quiero obtener el listado de reservas canceladas
+
+para organizar su seguimiento.
 
 **Prueba de aceptación**
 
 - El listado incluye las reservas con estado `Cancelado` y su fecha y hora de cancelación.
 
-**R.F.06.02. Creación/realización de cancelación por el Cliente**  
-Como cliente, quiero cancelar una reserva para comunicar que no voy a utilizar la sala.
+**R.F.06.02.Realización de cancelación por el Cliente**  
+
+Como cliente,
+
+quiero cancelar una reserva
+
+para comunicar que no voy a utilizar la sala.
 
 **Prueba de aceptación**
 
@@ -276,15 +368,23 @@ Como cliente, quiero cancelar una reserva para comunicar que no voy a utilizar l
 - Si faltan menos de 24 horas para el inicio, la fianza queda retenida y no se devuelve. Se aplica **R.N.04**.
 
 **R.F.06.03. Edición de cancelación**  
-Como gestor, quiero corregir la fecha y hora de una cancelación registrada.
+
+Como gestor,
+
+quiero corregir la fecha y hora de una cancelación registrada.
 
 **Prueba de aceptación**
 
 - Se puede corregir la fecha y hora de cancelación.
 - La reserva conserva el estado `Cancelado` y no vuelve a `Pendiente` ni a `Confirmado`. Se aplica **R.N.03**.
 
-**R.F.06.04. Creación/realización de cancelación por el Gestor**  
-Como gestor, quiero registrar una cancelación comunicada por un cliente para mantener actualizada la reserva.
+**R.F.06.04.Realización de cancelación por el Gestor**  
+
+Como gestor,
+
+quiero registrar una cancelación comunicada por un cliente
+
+para mantener actualizada la reserva.
 
 **Prueba de aceptación**
 
@@ -296,7 +396,7 @@ Como gestor, quiero registrar una cancelación comunicada por un cliente para ma
 
 **R.I.01. Información de usuarios**
 
-Como gestor 
+Como gestor,
 
 quiero consultar los datos de los usuarios
 
@@ -311,7 +411,7 @@ para identificar quién utiliza el sistema.
 
 **R.I.02. Información de salas**
 
-Como gestor
+Como gestor,
 
 quiero consultar los datos de las salas 
 
@@ -323,7 +423,7 @@ para asignarlas a las reservas.
 
 **R.I.03. Información de reservas**
 
-Como cliente o gestor 
+Como cliente o gestor,
 
 quiero consultar los datos de una reserva
 
@@ -339,7 +439,7 @@ para conocer su periodo, estado y precio.
 
 **R.I.04. Información de instrumentos y líneas de alquiler**
 
-Como gestor 
+Como gestor,
 
 quiero consultar los instrumentos y sus cantidades reservadas 
 
@@ -352,7 +452,7 @@ para conocer qué incluye cada reserva.
 
 **R.I.05. Información de pagos**
 
-Como gestor 
+Como gestor, 
 
 quiero consultar los pagos 
 
