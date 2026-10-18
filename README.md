@@ -83,9 +83,10 @@ para llevar el control de los importes abonados.
 
 Como cliente,
 
-quiero cancelar mis reservas
+quiero cancelar mis reservas cuando todavía esté dentro del plazo permitido
 
-cuando no pueda asistir y conocer qué ocurre con la fianza.
+para comunicar que no voy a utilizar la sala.
+
 ### 3.2. Usuarios del sistema
 - Cliente: realiza reservas y puede incluir instrumentos en ellas.
 
@@ -248,9 +249,12 @@ para eliminarla de mis reservas.
 
 **Prueba de aceptación**
 
-- La reserva borrada deja de aparecer en el listado.
-- También se borran las líneas de alquiler y el pago asociados a esa reserva.
+-La reserva se puede borrar si faltan al menos 24 horas para su inicio. Se aplica R.N.05.
 
+- No se puede borrar una reserva durante las últimas 24 horas antes de su inicio.
+
+- Al borrar la reserva, también se borran las líneas de alquiler y el pago asociados.
+  
 **R.F.04.01. Creación de instrumento**  
 
 Como gestor,
@@ -374,9 +378,11 @@ para comunicar que no voy a utilizar la sala.
 
 **Prueba de aceptación**
 
-- La reserva pasa al estado `Cancelado`.
-- Al cancelarla, se registra la fecha y hora de cancelación.
-- Si faltan menos de 24 horas para el inicio, la fianza queda retenida y no se devuelve. Se aplica **R.N.04**.
+- La cancelación se acepta si faltan al menos 24 horas para el inicio de la reserva. Se aplica R.N.05.
+
+- Si faltan menos de 24 horas, el sistema rechaza la cancelación y la reserva mantiene su estado. Se aplica R.N.05.
+
+- Cuando se acepta la cancelación, la reserva pasa al estado Cancelado y se registra la fecha y hora de cancelación. Se aplica R.N.03.
 
 **R.F.06.03. Edición de cancelación**  
 
@@ -388,8 +394,12 @@ para mantener correcta la información de la reserva cancelada.
 
 **Prueba de aceptación**
 
-- Se puede corregir la fecha y hora de cancelación.
-- La reserva conserva el estado `Cancelado` y no vuelve a `Pendiente` ni a `Confirmado`. Se aplica **R.N.03**.
+- Se puede corregir la fecha y hora de cancelación si la corrección respeta el plazo de 24 horas antes del inicio. Se aplica R.N.05.
+
+- Si la fecha y hora corregidas dejan menos de 24 horas antes del inicio, el sistema rechaza el cambio. Se aplica R.N.05.
+
+- La reserva conserva el estado Cancelado y no vuelve a Pendiente ni a Confirmado. Se aplica R.N.04.
+
 
 **R.F.06.04.Realización de cancelación por el Gestor**  
 
@@ -401,9 +411,11 @@ para mantener actualizada la reserva.
 
 **Prueba de aceptación**
 
-- La reserva pasa al estado `Cancelado`.
-- Se registra la fecha y hora de cancelación.
-- Si faltan menos de 24 horas para el inicio, la fianza queda retenida y no se devuelve. Se aplica **R.N.04**.
+-La cancelación se registra si faltan al menos 24 horas para el inicio de la reserva. Se aplica R.N.05.
+
+- Si faltan menos de 24 horas, el sistema rechaza la cancelación y la reserva mantiene su estado. Se aplica R.N.05.
+
+- Cuando se acepta la cancelación, la reserva pasa al estado Cancelado y se registra la fecha y hora de cancelación. Se aplica R.N.03.
 
 #### 4.1.1. Requisitos de información
 
@@ -530,7 +542,7 @@ Una reserva cuyo estado sea Cancelado no puede volver a los estados Pendiente ni
 
 **R.N.05. Penalización por cancelación**
 
-Si una reserva se cancela con menos de 24 horas de antelación, la fianza queda retenida y no se devuelve.
+Una reserva solo puede cancelarse si faltan al menos 24 horas para su inicio. Si faltan menos de 24 horas, el sistema rechaza la cancelación y la reserva no cambia de estado. El borrado de una reserva tampoco se permite durante ese plazo.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
@@ -582,7 +594,7 @@ Como gestor,
 
 quiero que el sistema registre de forma fiable la fecha y la hora de cada cancelación,
 
-para aplicar correctamente la penalización correspondiente y conservar el dato asociado a la reserva.
+para comprobar si se cumple el plazo mínimo de 24 horas antes de aceptar o rechazarla.
 
 -- fin entregable 1 --
 
