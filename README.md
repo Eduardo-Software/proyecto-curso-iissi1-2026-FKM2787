@@ -136,7 +136,9 @@ para mantenerlos actualizados.
 
 Como gestor,
 
-quiero borrar cuentas que ya no deban estar en el sistema.
+quiero borrar cuentas que ya no deban estar en el sistema,
+
+para mantener actualizado el registro de usuarios.
 
 **Prueba de aceptación**
 
@@ -182,11 +184,13 @@ para mantenerlos actualizados.
 - Se pueden modificar el nombre, la capacidad y el precio por hora.
 - Los cambios aparecen en el listado.
 
-**R.F.02.04. Borrado de sala**  
+**R.F.02.04. Borrado de sala** 
 
 Como gestor,
 
-quiero borrar salas que ya no se utilicen.
+quiero borrar salas que ya no se utilicen,
+
+para mantener actualizado el catálogo de salas.
 
 **Prueba de aceptación**
 
@@ -240,7 +244,9 @@ para corregirlos o actualizarlos.
 
 Como cliente,
 
-quiero borrar una reserva que ya no necesite.
+quiero borrar una reserva que ya no necesite,
+
+para eliminarla de mis reservas.
 
 **Prueba de aceptación**
 
@@ -275,7 +281,9 @@ para organizar el catálogo.
 
 Como gestor,
 
-quiero editar los datos de un instrumento para mantenerlos actualizados.
+quiero editar los datos de un instrumento 
+
+para mantenerlos actualizados.
 
 **Prueba de aceptación**
 
@@ -286,7 +294,9 @@ quiero editar los datos de un instrumento para mantenerlos actualizados.
 
 Como gestor,
 
-quiero borrar instrumentos que ya no formen parte del catálogo.
+quiero borrar instrumentos que ya no formen parte del catálogo,
+
+para mantener actualizado el catálogo de instrumentos.
 
 **Prueba de aceptación**
 
@@ -335,7 +345,9 @@ para corregir sus datos.
 
 Como gestor,
 
-quiero borrar un pago registrado por error.
+quiero borrar un pago registrado por error,
+
+para corregir la información de los pagos.
 
 **Prueba de aceptación**
 
@@ -372,7 +384,9 @@ para comunicar que no voy a utilizar la sala.
 
 Como gestor,
 
-quiero corregir la fecha y hora de una cancelación registrada.
+quiero corregir la fecha y hora de una cancelación registrada,
+
+para mantener correcta la información de la reserva cancelada.
 
 **Prueba de aceptación**
 
