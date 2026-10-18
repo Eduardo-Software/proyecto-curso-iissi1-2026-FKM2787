@@ -411,73 +411,108 @@ para mantener actualizada la reserva.
 
 **R.I.01. Información de usuarios**
 
-Como gestor,
+Como administrador del sistema,
 
-quiero consultar los datos de los usuarios
+quiero almacenar los atributos Email y Contraseña sobre Usuario, y Nombre y Teléfono para Cliente y Gestor,
 
-para identificar quién utiliza el sistema.
+para mantener la información de las cuentas y sus asociaciones.
+
+- Un Usuario es Cliente o Gestor. Cada usuario debe pertenecer a uno de esos tipos, pero no a los dos.
+
+- Un Gestor gestiona una o varias salas. Cada sala está gestionada por un Gestor.
+
+- Un Cliente realiza reservas. Cada reserva la realiza un solo Cliente y un Cliente puede realizar varias reservas.
 
 **Prueba de aceptación**
 
-- Usuario guarda email y contraseña.
-- Cliente guarda nombre y teléfono.
-- Gestor guarda nombre y teléfono.
-- Cada usuario es Cliente o Gestor.
+- El sistema muestra el email y el tipo de cada usuario.
+
+- Para Cliente y Gestor muestra el nombre y el teléfono.
 
 **R.I.02. Información de salas**
 
-Como gestor,
+Como administrador del sistema,
 
-quiero consultar los datos de las salas 
+quiero almacenar los atributos Nombre, Capacidad y PrecioHora sobre Sala,
 
-para asignarlas a las reservas.
+para mantener la información necesaria para asignar salas a las reservas.
+
+- Cada Sala está asociada a un Gestor que la gestiona. Un Gestor puede gestionar varias salas.
+
+- Cada Reserva tiene asignada una Sala. Una Sala puede estar asociada a varias reservas realizadas en distintos horarios, siempre que no se solapen.
 
 **Prueba de aceptación**
 
-- Sala guarda nombre, capacidad y precio por hora.
+- El sistema muestra un listado de salas con el nombre, la capacidad, el precio por hora y el Gestor responsable.
 
 **R.I.03. Información de reservas**
 
-Como cliente o gestor,
+Como administrador del sistema,
 
-quiero consultar los datos de una reserva
+quiero almacenar los atributos FechaInicio, FechaFin, NúmeroPersonas, EstadoReserva, PrecioEstimado, PrecioTotal y FechaHoraCancelación sobre Reserva,
 
-para conocer su periodo, estado y precio.
+para disponer de la información necesaria para organizar y controlar las reservas.
 
-**Prueba de aceptación**
+- Cada Reserva la realiza un solo Cliente. Un Cliente puede realizar varias reservas.
 
-- Reserva guarda fecha y hora de inicio, fecha y hora de fin y número de personas.
-- El estado utiliza el enum EstadoReserva, con los valores definidos en el mapa: Pendiente, Confirmado, Cancelado y Financiado.
-- Si la reserva se cancela, se guarda la fecha y hora de cancelación.
-- Se muestran el precio estimado y el precio total.
-- La reserva está asociada al Cliente que la realizó.
+- Cada Reserva tiene asignada una sola Sala. Una Sala puede tener varias reservas en distintos horarios, siempre que no se solapen.
 
-**R.I.04. Información de instrumentos y líneas de alquiler**
+- Cada Reserva tiene asociado un Pago, y cada Pago corresponde a una sola Reserva.
 
-Como gestor,
-
-quiero consultar los instrumentos y sus cantidades reservadas 
-
-para conocer qué incluye cada reserva.
+- Una Reserva puede incluir varias líneas de alquiler. Cada LíneaAlquiler corresponde a una sola Reserva.
 
 **Prueba de aceptación**
 
-- Instrumento guarda nombre, categoría, stock total y valor de fianza.
-- Línea de alquiler guarda la cantidad del instrumento asociada a la reserva.
+- El sistema muestra las reservas con el Cliente, la Sala, el periodo, el número de personas, el estado y los importes.
 
-**R.I.05. Información de pagos**
+- El sistema muestra la fecha y hora de cancelación cuando la reserva está cancelada.
 
-Como gestor, 
+- EstadoReserva utiliza los valores Pendiente, Confirmado, Cancelado y Financiado.
+  
+**R.I.04. Información de instrumentos**
 
-quiero consultar los pagos 
+Como administrador del sistema,
 
-para conocer el importe abonado y cuándo se realizó.
+quiero almacenar los atributos Nombre, Categoría, StockTotal y ValorFianza sobre Instrumento,
+
+para mantener la información de los instrumentos que pueden incluirse en las reservas.
+
+- Un Instrumento puede aparecer en varias líneas de alquiler. Cada LíneaAlquiler corresponde a un solo Instrumento.
 
 **Prueba de aceptación**
 
-- Pago guarda el monto y la fecha.
-- El pago está asociado a una reserva.
-- La fianza asociada se calcula a partir de los instrumentos y las cantidades incluidas en la reserva.
+- El sistema muestra un listado de instrumentos con el nombre, la categoría, el stock total y el valor de la fianza.
+
+**R.I.05. Información de líneas de alquiler**
+
+Como administrador del sistema,
+
+quiero almacenar el atributo Cantidad sobre LíneaAlquiler,
+
+para conocer cuántas unidades de cada instrumento incluye una reserva.
+
+- Cada LíneaAlquiler corresponde a una sola Reserva. Una Reserva puede tener varias líneas de alquiler.
+
+- Cada LíneaAlquiler corresponde a un solo Instrumento. Un Instrumento puede aparecer en varias líneas de alquiler.
+
+**Prueba de aceptación**
+
+- El sistema muestra, para cada reserva, los instrumentos incluidos y la cantidad de cada uno.
+
+**R.I.06. Información de pagos**
+
+Como administrador del sistema,
+
+quiero almacenar los atributos Monto, Fecha y Fianza sobre Pago,
+
+para mantener la información económica asociada a las reservas.
+
+- Cada Pago está asociado a una sola Reserva, y cada Reserva tiene asociado un Pago.
+
+**Prueba de aceptación**
+
+- El sistema muestra un listado de pagos con el monto, la fecha, la reserva asociada y la fianza calculada.
+  
 #### 4.1.2. Reglas de negocio
 **R.N.01. Sin solapamiento de salas**
 
