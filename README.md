@@ -40,6 +40,7 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 
 ### 3.1. Requisitos generales
 **R.G.01. Gestión de usuarios**
+
 Como gestor,
 
 quiero gestionar las cuentas de usuario
