@@ -145,8 +145,6 @@ para mantener actualizado el registro de usuarios.
 - Se puede borrar una cuenta que no esté asociada a reservas.
 - No se puede borrar una cuenta que tenga reservas asociadas.
 
-#### Requisitos asociados a R.G.02. Gestión de salas
-
 **R.F.02.01. Creación de sala**
 
 Como gestor,
@@ -366,7 +364,7 @@ para organizar su seguimiento.
 
 - El listado incluye las reservas con estado `Cancelado` y su fecha y hora de cancelación.
 
-**R.F.06.02.Realización de cancelación por el Cliente**  
+**R.F.06.02.Realización de cancelación**  
 
 Como cliente,
 
