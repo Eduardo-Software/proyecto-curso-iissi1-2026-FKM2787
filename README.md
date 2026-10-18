@@ -536,10 +536,53 @@ Si una reserva se cancela con menos de 24 horas de antelación, la fianza queda 
 
 ### 4.3. Requisitos no funcionales (opcional)
 
-**R.N.F. 01. Título requisito no funcional**
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+**R.N.F.01.1. Protección de cuentas**
+
+Como administrador del sistema,
+
+quiero que las contraseñas se guarden mediante un método seguro y que el acceso dependa del tipo de usuario,
+
+para proteger las cuentas y evitar accesos no autorizados.
+
+**R.N.F.02.1. Facilidad de uso de la gestión de salas**
+
+Como gestor,
+
+quiero que los formularios de salas tengan campos y mensajes claros,
+
+para poder mantener la información de las salas fácilmente y reducir errores al introducir datos
+
+**R.N.F.03.1. Rendimiento de las reservas**
+
+Como cliente,
+
+quiero que las operaciones de consulta y creación de reservas respondan en menos de dos segundos cuando haya hasta 50 usuarios conectados a la vez,
+
+para poder organizar mi reserva sin esperas largas.
+
+**R.N.F.04.1. Integridad de la información de instrumentos**
+
+Como gestor,
+
+quiero que los cambios en la información de los instrumentos se guarden de forma consistente, incluso si varios gestores trabajan a la vez,
+
+para evitar que se pierdan o sobrescriban datos.
+
+**R.N.F.05.1. Confidencialidad de los pagos**
+
+Como cliente,
+
+quiero que la información de mis pagos y fianzas se transmita de forma segura y solo puedan verla los usuarios autorizados,
+
+para proteger mis datos económicos.
+
+**R.N.F.06.1. Fiabilidad de las cancelaciones**
+
+Como gestor,
+
+quiero que el sistema registre de forma fiable la fecha y la hora de cada cancelación,
+
+para aplicar correctamente la penalización correspondiente y conservar el dato asociado a la reserva.
 
 -- fin entregable 1 --
 
