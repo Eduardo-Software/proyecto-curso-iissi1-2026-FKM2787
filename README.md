@@ -23,12 +23,7 @@ Los usuarios del sistema son los clientes, que realizan reservas, y los gestores
 
 ## 2. Glosario de términos
 
-- Fianza: cantidad calculada según los instrumentos incluidos en una reserva.
 - Línea de alquiler: asociación entre una reserva y un instrumento; guarda la cantidad solicitada.
-- Precio estimado: importe calculado según la duración de la reserva y el precio por hora de la sala.
-- Precio total: precio estimado más la fianza.
-- Reserva: solicitud de uso de una sala durante un periodo determinado.
-- Sala: espacio del estudio que se asigna a una reserva.
 - Stock total: cantidad total disponible de un tipo de instrumento.
 
   
