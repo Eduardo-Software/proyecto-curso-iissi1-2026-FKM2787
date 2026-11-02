@@ -254,6 +254,8 @@ para eliminarla de mis reservas.
 - No se puede borrar una reserva durante las últimas 24 horas antes de su inicio.
 
 - Al borrar la reserva, también se borran las líneas de alquiler y el pago asociados.
+
+- Si la reserva está en estado Cancelado, debe tener registrada su fecha y hora de cancelación. Si no está cancelada, ese dato debe quedar vacío.
   
 **R.F.04.01. Creación de instrumento**  
 
@@ -532,15 +534,11 @@ Una misma sala no puede estar asignada a dos reservas cuyos periodos de uso se s
 
 El número de personas de una reserva no puede superar la capacidad de la sala asignada.
 
-**R.N.03. Registro de la fecha de cancelación**
-
-Si una reserva está en estado Cancelado, debe tener registrada su fecha y hora de cancelación. Si no está cancelada, ese dato debe quedar vacío.
-
-**R.N.04. Reserva cancelada no reactivable**
+**R.N.03. Reserva cancelada no reactivable**
 
 Una reserva cuyo estado sea Cancelado no puede volver a los estados Pendiente ni Confirmado.
 
-**R.N.05. Penalización por cancelación**
+**R.N.04. Penalización por cancelación**
 
 Una reserva solo puede cancelarse si faltan al menos 24 horas para su inicio. Si faltan menos de 24 horas, el sistema rechaza la cancelación y la reserva no cambia de estado. El borrado de una reserva tampoco se permite durante ese plazo.
 
