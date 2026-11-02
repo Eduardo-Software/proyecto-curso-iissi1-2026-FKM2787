@@ -599,49 +599,7 @@ para comprobar si se cumple el plazo mínimo de 24 horas antes de aceptar o rech
 ## 5. Modelo conceptual
 
 ### 5.1. Diagramas de clases UML
-Entidades y Atributos:
 
-Usuario (Abstracta): email (String), contraseña (String).
-
-Cliente (hereda de Usuario): nombre (String), teléfono (String).
-
-Gestor (hereda de Usuario): nombre (String), teléfono (String).
-
-Sala: nombre (String), capacidad (Integer), precioHora (Float).
-
-Reserva: fechaInicio (DateTime), fechaFin (DateTime), numeroPersonas (Integer), estadoReserva (String), precioEstimado (Float), precioTotal (Float), fechaHoraCancelacion (DateTime).
-
-Instrumento: nombre (String), categoria (String), stockTotal (Integer), valorFianza (Float).
-
-LineaAlquiler: cantidad (Integer).
-
-Pago: monto (Float), fecha (Date), fianza (Float).
-
-Asociaciones y Multiplicidades:
-
-Gestiona: Gestor (1) gestiona Sala (1..*).
-
-Realiza: Cliente (1) realiza Reserva (0..*).
-
-Asignada: Reserva (0..*) tiene asignada Sala (1).
-
-Incluye: Reserva (1) incluye LineaAlquiler (0..*).
-
-Corresponde: LineaAlquiler (0..*) corresponde a Instrumento (1).
-
-Asociado: Reserva (1) tiene asociado Pago (1).
-
-Restricciones:
-
-{R.N.01: Para toda r1, r2 asignadas a la misma Sala, r1.fechaInicio >= r2.fechaFin O r1.fechaFin <= r2.fechaInicio}
-
-{R.N.02: Reserva.numeroPersonas <= Reserva.sala.capacidad}
-
-{R.N.03: Reserva.fechaHoraCancelacion != null SI estadoReserva == "Cancelado"}
-
-{Reserva.precioEstimado = (Reserva.fechaFin - Reserva.fechaInicio) en horas * Reserva.sala.precioHora}
-
-{Pago.fianza = Sumatorio(LineaAlquiler.cantidad * LineaAlquiler.instrumento.valorFianza)}
 
 ### 5.2. Escenarios de prueba
 
