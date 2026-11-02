@@ -643,8 +643,6 @@ Restricciones:
 
 {Pago.fianza = Sumatorio(LineaAlquiler.cantidad * LineaAlquiler.instrumento.valorFianza)}
 
-- con restricciones.
-
 ### 5.2. Escenarios de prueba
 
 - con descripción textual y diagrama de objetos UML.
