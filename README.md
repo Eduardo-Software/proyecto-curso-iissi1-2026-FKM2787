@@ -594,6 +594,7 @@ para comprobar si se cumple el plazo mínimo de 24 horas antes de aceptar o rech
 ## 5. Modelo conceptual
 
 ### 5.1. Diagramas de clases UML
+<img width="656" height="895" alt="Captura 2026-11-02 a las 12 52 18" src="https://github.com/user-attachments/assets/c40e8910-93d0-47f4-9e56-9f37c727a7ee" />
 
 
 ### 5.2. Escenarios de prueba
