@@ -204,9 +204,8 @@ para utilizar una sala durante un periodo determinado.
 - La reserva guarda el cliente, la sala, la fecha y hora de inicio, la fecha y hora de fin y el número de personas.
 - El número de personas no supera la capacidad de la sala. Se aplica **R.N.02**.
 - La sala no tiene otra reserva cuyo horario se solape. Se aplica **R.N.01**.
-- El precio estimado se calcula como `Duración × Sala.PrecioHora`.
-- La fianza se calcula como `Σ (LíneaAlquiler.Cantidad × Instrumento.ValorFianza)`.
-- El precio total se calcula como `PrecioEstimado + Fianza`.
+- El PrecioSala se calcula como la duración de la reserva en horas multiplicada por el precio por hora de la sala: PrecioSala = Duración × Sala.PrecioHora.
+- El precio total se calcula como PrecioSala + Precio.LineaAlquiler.
 
 **R.F.03.02. Listado de reservas**  
 
@@ -456,7 +455,7 @@ para mantener la información necesaria para asignar salas a las reservas.
 
 Como administrador del sistema,
 
-quiero almacenar los atributos FechaInicio, FechaFin, NúmeroPersonas, EstadoReserva, PrecioEstimado, PrecioTotal y FechaHoraCancelación sobre Reserva,
+quiero almacenar los atributos FechaInicio, FechaFin, NúmeroPersonas, EstadoReserva, PrecioSala, PrecioTotal y FechaHoraCancelación sobre Reserva,
 
 para disponer de la información necesaria para organizar y controlar las reservas.
 
@@ -519,6 +518,23 @@ para mantener la información económica asociada a las reservas.
 **Prueba de aceptación**
 
 - El sistema muestra un listado de pagos con el monto, la fecha, la reserva asociada y la fianza calculada.
+  
+#### 4.1.2. Reglas de negocio
+**R.N.01. Sin solapamiento de salas**
+
+Una misma sala no puede estar asignada a dos reservas cuyos periodos de uso se solapen.
+
+**R.N.02. Límite de capacidad de la sala**
+
+El número de personas de una reserva no puede superar la capacidad de la sala asignada.
+
+**R.N.03. Reserva cancelada no reactivable**
+
+Una reserva cuyo estado sea Cancelado no puede volver a los estados Pendiente ni Confirmado.
+
+**R.N.04. Penalización por cancelación**
+
+Una reserva solo puede cancelarse si faltan al menos 24 horas para su inicio. Si faltan menos de 24 horas, el sistema rechaza la cancelación y la reserva no cambia de estado. El borrado de una reserva tampoco se permite durante ese plazo.
   
 #### 4.1.2. Reglas de negocio
 **R.N.01. Sin solapamiento de salas**
